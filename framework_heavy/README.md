@@ -1,15 +1,5 @@
 # framework_heavy
 
-Designed for high-throughput setups with multiple web/CLI agents running in parallel. Supports many tasks in flight, deeper QA layers, and explicit resource budgeting. Includes guidance for multi-session management, concurrency rules, GPU/credit awareness, and dedicated instructions for web agents.
+Designed for high-throughput setups with multiple web/CLI agents running in parallel. Supports many tasks in flight, deeper QA layers, and explicit resource budgeting.
 
-## includes: session_registry.md
-Purpose: track active sessions and roles. TODO: Describe how to register, pause, and close sessions.
-
-## includes: concurrency_playbook.md
-Purpose: rules for safe parallel work. TODO: Add conflict-avoidance and merge strategies.
-
-## includes: resource_budgeting.md
-Purpose: monitor compute, credits, and time. TODO: Define budgets, alerts, and throttling behaviors.
-
-## includes: web_agents.md
-Purpose: guidance for web-capable agents alongside local ones. TODO: Add browsing boundaries and handoff steps.
+Start at `agents/_entrypoint.md`, then run `agents/prompt_engineering_cycle.md` and `agents/builder_cycle.md` per session. QA can escalate to `agents/deep_qa_cycle.md`. Roles (including orchestrator) live under `agents/roles/*.md`. Session and resource controls live in `workflow/session_registry.md`, `workflow/concurrency_playbook.md`, and `workflow/resource_budgeting.md`. Web/remote guidance is in `workflow/web_agents.md`. Active work stays in `workflow/tasks.md` with backlog, expectations, outline, roadmap, autoscheduler, and history in `workflow/`.

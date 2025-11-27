@@ -1,5 +1,14 @@
 # Roadmap
-Forward-looking plan with automation considerations. Keeps upcoming work ready for prompt refinement.
+## Purpose
+Forward plan that shapes future tasks and automation needs.
 
-- TODO: Add near-, mid-, long-term items with owners.
-- TODO: Note dependencies that affect scheduling.
+## How to use
+- Use this to feed `workflow/tasks_backlog.md` and set scheduling priorities.  
+- Call out dependencies or resource needs before autoscheduling.  
+- Update after major decisions; log changes in `workflow/historylog.md`.
+
+## Template
+- Near-term items ready to schedule: …  
+- Mid-term items needing design/prompt work: …  
+- Long-term bets and ideas: …  
+- Dependencies, resources, and review cadence: …

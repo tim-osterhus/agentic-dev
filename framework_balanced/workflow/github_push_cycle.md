@@ -1,11 +1,22 @@
 # GitHub Push Cycle
 
 ## Purpose
-Standardize how approved work gets committed and pushed after QA.
+Standardize commit/push steps after QA approval to keep history clean.
 
-## Intended Sequence in the Workflow
-Triggered after qa_cycle.md approval. Runs checks, prepares commits, and syncs branches before closing tasks.
+## How to use
+- Trigger only after `agents/qa_cycle.md` approves the task.  
+- Ensure required checks and branch rules are known before committing.  
+- Record outcomes in `workflow/historylog.md`.
 
-- TODO: List required tests and lint steps before push.
-- TODO: Define commit message format and branch rules.
-- TODO: Describe how to record pushes in historylog.md.
+## Steps
+1) Re-run required tests/lints; confirm results.  
+2) Summarize changes and craft a clear commit message.  
+3) Commit and push to the appropriate branch; note PR expectations if any.  
+4) Append push details (commit hash, branch, status) to `workflow/historylog.md`.  
+5) Update `workflow/tasks.md` status and close or archive as needed.
+
+## Template for repo-specific notes
+- Required checks before push: …  
+- Commit message/branch format: …  
+- When to batch or squash: …  
+- Release/PR steps (if any): …

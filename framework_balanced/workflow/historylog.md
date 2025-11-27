@@ -1,5 +1,15 @@
 # History Log
-Chronological record of actions, prompts, and QA results. Use as shared memory between agents.
+## Purpose
+Append-only log for actions, prompt revisions, test results, and decisions. Shared memory across roles.
 
-- TODO: Define log schema (timestamp, agent, prompt version, outcome).
-- TODO: Capture links to diffs, tests, and pushes.
+## How to use
+- Log after each prompt revision, checkpoint, QA pass/fail, or push event.  
+- Cite commands run and files touched; link to the active card in `workflow/tasks.md`.  
+- Keep entries concise but reproducible for the next role.
+
+## Entry Template
+- Timestamp / agent / role: …  
+- Task reference and prompt version (if applicable): …  
+- Actions taken (commands, files, decisions): …  
+- Results (pass/fail/blocker): …  
+- Next steps or handoffs: …

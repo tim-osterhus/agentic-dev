@@ -1,6 +1,12 @@
 # Role: Tests
-Testing guidance with prompt-aware coverage and stable verification.
+## Purpose
+Testing specialization to align coverage with refined prompts and QA expectations.
 
-- TODO: Define required test suites and commands.
-- TODO: Add strategies for reducing flaky runs.
-- TODO: Note QA acceptance signals and logging format.
+## When to activate
+- Adding or adjusting coverage, stabilizing suites, or defining acceptance checks.
+
+## Checklist
+- Define which suites to run per task; prefer fast checks first.  
+- Document commands, fixtures, and expected results in `workflow/historylog.md` for QA reuse.  
+- Flag flakiness and propose mitigations (retries, isolation).  
+- Ensure assertions trace back to acceptance criteria in `workflow/expectations.md`.

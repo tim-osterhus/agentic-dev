@@ -1,11 +1,14 @@
 # Deep QA Cycle
 
 ## Purpose
-Thorough verification pass for complex or risky changes, potentially across multiple agents or environments.
+Multi-pass verification for complex or high-risk changes. Expands checks beyond the baseline QA cycle.
 
 ## How it interacts with other files
-Triggered by qa_cycle.md or orchestrator.md, uses expectations.md and resource_budgeting.md to plan checks, and records findings in historylog.md.
+Triggered from `agents/qa_cycle.md` or `agents/roles/orchestrator.md`. Uses `workflow/expectations.md`, `workflow/resource_budgeting.md`, `workflow/session_registry.md`, and `workflow/web_agents.md` when external validation is needed. Logs to `workflow/historylog.md`.
 
-- TODO: Define extended test matrix and performance checks.
-- TODO: Add criteria for involving web_agents.md for external validation.
-- TODO: Describe rollback or hotfix steps after failures.
+## Steps
+1) Reconfirm scope, risks, and resource budget for this deep pass.  
+2) Define extended test matrix (performance, security, compatibility) and owners.  
+3) Run checks, possibly across sessions; capture evidence and impacts.  
+4) Summarize findings, blockers, and required fixes; update tasks/backlog as needed.  
+5) Recommend go/no-go for push; note any hotfix or rollback steps.

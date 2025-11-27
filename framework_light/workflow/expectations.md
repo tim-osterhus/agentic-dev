@@ -1,6 +1,15 @@
 # Expectations
-Quality and communication standards for the light profile. Keeps Builder and QA aligned.
+## Purpose
+Defines success criteria, quality bars, and communication norms for the session.
 
-- TODO: Set coding standards and review rules.
-- TODO: Define severity levels and defect handling.
-- TODO: Note responsiveness and update cadence.
+## How to use
+- Builder: read before planning; keep changes within these guardrails.  
+- QA: validate against this list before approving.  
+- Update if scope shifts; note changes in `workflow/historylog.md`.
+
+## Template
+- Functional expectations (what must work): …  
+- Non-functional expectations (performance, safety, logging): …  
+- Out-of-scope items: …  
+- Tests/commands that must pass: …  
+- Review/acceptance notes: …

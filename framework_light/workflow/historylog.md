@@ -1,5 +1,15 @@
 # History Log
-Chronological notes of actions, tests, and outcomes. This is the shared memory for the session.
+## Purpose
+Append-only record of actions, decisions, and test results. Shared memory for Builder and QA.
 
-- TODO: Define log format (timestamp, agent, action, result).
-- TODO: Capture links to diffs or artifacts.
+## How to use
+- Log after each meaningful checkpoint, handoff, or blocker.  
+- Link back to `workflow/tasks.md` and cite commands run.  
+- Keep entries concise but reproducible for the next agent.
+
+## Entry Template
+- Timestamp / agent / role: …  
+- Task reference: …  
+- Actions taken (commands, files touched): …  
+- Results (pass/fail, blockers): …  
+- Next steps or handoffs: …

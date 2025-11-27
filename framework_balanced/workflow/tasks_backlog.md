@@ -1,5 +1,15 @@
 # Tasks Backlog
-Queued tasks for the autoscheduler to pull from. Keep items ready for prompt refinement.
+## Purpose
+Intake queue feeding the autoscheduler. Keep items concise and ready for prompt refinement.
 
-- TODO: Add prioritized entries with tags/risks.
-- TODO: Note dependencies and required roles.
+## How to use
+- Keep highest-priority ready items at the top; note dependencies and blockers.  
+- When capacity frees up, use `workflow/autoscheduler.md` to move one item into `workflow/tasks.md`.  
+- If an item is unclear, add questions here and pause scheduling until clarified.
+
+## Template
+- Priority/tag and owner placeholder: …  
+- Description and dependencies: …  
+- Required roles or skills: …  
+- Pre-checks before activation: …  
+- Suggested tests or evidence: …

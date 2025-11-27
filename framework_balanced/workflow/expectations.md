@@ -1,6 +1,16 @@
 # Expectations
-Quality bar and constraints for the balanced profile. Aligns Builder, QA, and automation.
+## Purpose
+Quality bar and constraints for the balanced flow. Aligns prompt refinement, Builder, QA, and push decisions.
 
-- TODO: Define coding standards and prompt review rules.
-- TODO: Specify QA acceptance gates before github_push_cycle.md.
-- TODO: Note communication cadence and escalation paths.
+## How to use
+- Prompt Engineer: codify expectations before Builder starts.  
+- Builder: plan and execute within these boundaries.  
+- QA: validate against this list and note any deviations in `workflow/historylog.md`.  
+- Update if scope changes; record revisions.
+
+## Template
+- Functional expectations and boundaries: …  
+- Non-functional items (performance, safety, logging): …  
+- Tests/commands required before QA and before push: …  
+- Review/acceptance gates and escalation paths: …  
+- Items explicitly out of scope: …

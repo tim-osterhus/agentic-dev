@@ -1,5 +1,16 @@
-# Tasks (Active)
-Current tasks in flight with prompt refinement applied. Keep tight linkage to expectations.md.
+# Active Task
+## Purpose
+Single active card with its refined prompt, ready for Builder execution.
 
-- TODO: List active tasks with owners and due dates.
-- TODO: Include acceptance criteria and links to prompts.
+## How to use
+1) Move the top ready item from `workflow/tasks_backlog.md` via `workflow/autoscheduler.md`.  
+2) Capture the refined prompt output from `agents/prompt_engineering_cycle.md`.  
+3) Keep this card current; archive to `workflow/historylog.md` when done.
+
+## Template
+- Title & date: …  
+- Owner / role: …  
+- Refined prompt link or summary: …  
+- Constraints and acceptance criteria: …  
+- Planned tests/validation: …  
+- Status and next checkpoint: …

@@ -1,11 +1,14 @@
 # Entrypoint
 
 ## Purpose
-Primary instructions for orchestrating multiple agents and sessions. Sets global scope, constraints, and resource limits before work begins.
+Global kickoff for multi-session work. Sets scope, constraints, resource caps, and routing rules for Builders, QA, and Orchestrator.
 
 ## How it interacts with other files
-Feeds roles guidance to specific agents, points Builders to builder_cycle.md, and instructs QA teams to follow qa_cycle.md or deep_qa_cycle.md depending on risk.
+Directs agents to `agents/prompt_engineering_cycle.md`, `agents/builder_cycle.md`, `agents/qa_cycle.md`, and `agents/deep_qa_cycle.md`. Coordinates with `agents/roles/orchestrator.md`, `workflow/session_registry.md`, `workflow/concurrency_playbook.md`, `workflow/resource_budgeting.md`, and `workflow/autoscheduler.md`.
 
-- TODO: List session bootstrapping steps and environment notes.
-- TODO: Define escalation paths to orchestrator.md.
-- TODO: Capture shared constraints for all concurrent agents.
+## Steps
+1) Set objectives, constraints, and resource budgets for this run using `workflow/expectations.md` and `workflow/resource_budgeting.md`.  
+2) Register sessions, owners, and environments in `workflow/session_registry.md`; note concurrency rules in `workflow/concurrency_playbook.md`.  
+3) Pull work via `workflow/autoscheduler.md` into `workflow/tasks.md`, then run `agents/prompt_engineering_cycle.md` before each `agents/builder_cycle.md`.  
+4) Define QA depth (baseline vs `agents/deep_qa_cycle.md`) and escalation paths to `agents/roles/orchestrator.md` for conflicts or capacity changes.  
+5) Log decisions and risks in `workflow/historylog.md`.

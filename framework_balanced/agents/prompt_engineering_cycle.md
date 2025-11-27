@@ -1,11 +1,15 @@
 # Prompt Engineering Cycle
-
 ## Purpose
-Refine task instructions before the Builder acts to reduce ambiguity and rework.
+Refine task/system prompts before the Builder acts to reduce churn and clarify constraints.
 
-## Intended Sequence in the Workflow
-Runs before builder_cycle.md on each task, pulling context from tasks.md, expectations.md, and recent historylog.md entries.
+## Inputs
+- Active card: `workflow/tasks.md` (or candidate from `workflow/tasks_backlog.md`)  
+- Quality bar: `workflow/expectations.md`  
+- Context: `workflow/outline.md`, `workflow/roadmap.md`, and `workflow/historylog.md`
 
-- TODO: Define steps to adjust system/task prompts per task.
-- TODO: Capture key clarifications and share back to Builder and QA.
-- TODO: Add guardrails for avoiding scope creep during refinement.
+## Steps
+1) Intake: Read the task and expectations; list ambiguities, dependencies, and constraints.  
+2) Draft prompt: Create or refine the system/user prompt for this task; keep scope tight and cite acceptance checks.  
+3) Share: Post the refined prompt, open questions, and decisions to `workflow/historylog.md`; brief Builder and QA.  
+4) Adjust: If scope or dependencies change, request updates to `workflow/tasks_backlog.md`, `workflow/outline.md`, or `workflow/roadmap.md` before Builder starts.  
+5) Handoff: Point Builder to `agents/builder_cycle.md` with the finalized prompt. Re-run this cycle if the task resets.

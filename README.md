@@ -3,9 +3,9 @@ Agentic development here means running LLMs as Builder and QA agents with clear 
 
 | Framework | Optimized For | Key Features | Typical Use Case |
 | --- | --- | --- | --- |
-| framework_light | Minimal overhead, single session | Builder + QA cycles, lean tasks/history, scoped roles | Solo contributor or fast fixes |
-| framework_balanced | Mix of automation and control | Prompt-engineering pre-cycle, autoscheduler, GitHub push loop | Iterative feature work with light automation |
-| framework_heavy | Maximum throughput and oversight | Multi-session orchestration, deep QA, resource/credit awareness, web/CLI agents | Large backlogs, parallel agents, constrained budgets |
+| framework_light | Minimal overhead, small tasks or projects | Two-part builder/QA cycle, simple tasks/history logs, scoped roles | Solo work, lightweight tasks, optimized for token efficiency |
+| framework_balanced | Supervised single-task workflow with optimized performance | Prompt-engineering pre-cycle, autoscheduler, GitHub push loop | Building out complex features in busy repos, one task at a time |
+| framework_heavy | Maximizing for output speed and automation | Multi-session orchestration, deep QA, coordinated hybrid usage of web/CLI agents | Large minor feature backlogs, parallel working agents, concurrent feature development |
 
 ## Who This Is For
 - Individual engineers wanting a disciplined AI-helper loop.

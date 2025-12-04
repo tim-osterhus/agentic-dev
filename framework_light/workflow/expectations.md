@@ -3,8 +3,8 @@
 Defines success criteria, quality bars, and communication norms for the session.
 
 ## How to use
-- Builder: read before planning; keep changes within these guardrails.  
-- QA: validate against this list before approving.  
+- QA: author/update this before running validation.  
+- Builder: read for awareness but do not edit during a task.  
 - Update if scope shifts; note changes in `workflow/historylog.md`.
 
 ## Template

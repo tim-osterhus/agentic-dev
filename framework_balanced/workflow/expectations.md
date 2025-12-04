@@ -3,10 +3,9 @@
 Quality bar and constraints for the balanced flow. Aligns prompt refinement, Builder, QA, and push decisions.
 
 ## How to use
-- Prompt Engineer: codify expectations before Builder starts.  
-- Builder: plan and execute within these boundaries.  
-- QA: validate against this list and note any deviations in `workflow/historylog.md`.  
-- Update if scope changes; record revisions.
+- QA: author/update this before running validation.  
+- Builder and Prompt Engineer: read for awareness but do not edit during a task.  
+- Update if scope changes; record revisions in `workflow/historylog.md`.
 
 ## Template
 - Functional expectations and boundaries: …  
